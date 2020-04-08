@@ -1,0 +1,23 @@
+download ‘Microsoft Office Interop Excel’ from Manage NuGet packages from Visual studio
+
+
+using excel = Microsoft.office.Interop.Excel;
+
+
+Inside test method
+
+excel.Application x =  new excel.Application();
+excel.Workbook y = x.Workbooks.Open(@"D:\rahul\rahul\rahul.xlsx");
+excel._Worksheet x1Worksheet = y.Sheets[1];
+excel.Range valuerange = x1Worksheet.UsedRange;
+int sw = valuerange.Count;
+Console.WriteLine(sw);
+
+for(int i=2;i<= valuerange.Count;i++)
+{
+
+String username = valuerange.Cells[1][i].value2;
+
+String password= valuerange.Cells[1][i].value2;
+
+}
