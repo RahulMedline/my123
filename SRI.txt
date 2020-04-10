@@ -1,0 +1,6 @@
+Go to "Start" -> "Run" and enter "dcomcnfg"
+This will bring up the component services window, expand out "Console Root" -> "Computers" -> "DCOM Config"
+Find "Microsoft Excel Application" in the list of components.
+Right click on the entry and select "Properties"
+Go to the "Identity" tab on the properties dialog.
+Select "The interactive user."
